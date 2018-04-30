@@ -1,0 +1,31 @@
+\documentclass[dissertation.tex]{subfiles}
+\begin{document}
+\section{Introduction}
+	The following is an example of how to get section numbering below \verb|subsubsection|.
+	
+	Showcasing an example of the harvard referencing style hack \citep{chaum1989}.
+	\subsection{Sub Section}
+	An example of using a figure.
+	\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.8]{Bitcoin_Transaction_Graph}
+	\caption[Bitcoin Transaction Process]{The process of signing and verifying a hash of the previous transaction and public key of the next owner.}
+
+	\end{figure}
+
+	\subsubsection{Sub Sub Section}
+ An example code listing using the listings package. 
+
+\begin{lstlisting}[caption=Re-Entrancy Contract - Using Send]
+contract fund {
+	mapping (address => uint) shares;
+	
+	function withdraw() public {
+	  if (msg.sender.send(shares[msg.sender]))
+	  	  shares[msg.sender] = 0;
+	}
+}
+\end{lstlisting}
+	\paragraph{Paragraph}\mbox{}\\
+
+\end{document}

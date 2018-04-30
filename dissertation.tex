@@ -1,0 +1,29 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{mystyle}
+\begin{document}
+
+	
+\subfile{mytitle.tex}
+\subfile{acknowledgements.tex}
+\subfile{copy.tex}
+
+\subfile{abstract.tex}
+\subfile{contents.tex}
+%Changing the spacing and numbering 
+\onehalfspacing
+\pagenumbering{arabic}
+% Main body of document
+\subfile{intro.tex}
+\subfile{intent.tex}
+
+\subfile{litreview.tex}
+\subfile{methodology.tex}
+\subfile{results.tex}
+\subfile{discussion.tex}
+\subfile{conclusion.tex}
+	% Appendices and References
+	\section{References}
+		\printbibliography[heading=none]
+		\clearpage
+	\section{Appendices}
+\end{document}
